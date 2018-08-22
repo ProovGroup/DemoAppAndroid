@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DemoAndroidSDK</string>
+    <string name="title_activity_custom">CustomActivity</string>
+</resources>
