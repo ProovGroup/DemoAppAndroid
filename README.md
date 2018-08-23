@@ -1,5 +1,5 @@
 ## Installation
-### ajouter le repo weproov
+### Ajouter le repository weproov
 ```
 allprojects {
     repositories {
@@ -11,13 +11,13 @@ allprojects {
 }
 ```
 
-### Dependence
+### Dépendances
 ```
 implementation 'com.ProovGroup.AndroidSDK:AndroidSDK:0.0.13'
 ```
 
 ### build.gradle
-Changer les compile option et activer le dataBinding
+Changer les compileOptions et activer le dataBinding
 ```
 android {
     ...
@@ -33,7 +33,7 @@ android {
 ```
 
 ## Permission
-AndroidManifest.xml ajouter les drois
+AndroidManifest.xml ajouter les droits
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="...">
@@ -61,7 +61,6 @@ AndroidManifest.xml ajouter les drois
 </manifest>
 ```
 
-
 ## Initialisation 
 Au lancement de l'app appeler ``WPConfig.init("fr");``
 ```
@@ -69,7 +68,7 @@ WPConfig.init("fr");
 ```
 
 ## colors.xml
-Changer les couleur du theme.
+Changer les couleurs du theme.
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -82,7 +81,7 @@ Changer les couleur du theme.
 </resources>
 ```
 
-Pour connecter au backend
+Pour se connecter au backend
 ```
     WPConfig.connect(this, "<token>", "<secret>", new WPConfig.ConnectionListener() {
         @Override
@@ -97,8 +96,8 @@ Pour connecter au backend
     });
 ```
 
-Pour ouvire un rapport dans une vue manager
-la variable params permet de rand visible les import et/ou les section s
+Pour ouvrir un rapport dans une vue managée
+la variable params permet de rendre visible les import et/ou les sections
 
 ```
 WPParameters params = new WPParameters();
