@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         mReportLoaderCtrl.getErrorEmitterLiveData().observe(this, new Observer<Throwable>() {
             @Override
             public void onChanged(@Nullable Throwable throwable) {
-                Log.d("WeProovSdk", throwable.getLocalizedMessage() );
                 finish();
             }
         });
